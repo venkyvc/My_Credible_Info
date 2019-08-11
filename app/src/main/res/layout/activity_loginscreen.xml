@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login_screen_bg2">
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_msg"
+        android:textSize="50sp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lobster_font"
+        android:textStyle="bold"
+        android:textColor="#CDDC39" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_msg"
+        android:text="@string/welcome_msg2"
+        android:textColor="#84920D"
+        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:hint="@string/email_hint"
+        android:fontFamily="@font/dancingscript_regular"
+        android:background="@drawable/edit_text_rounded"
+        android:drawableStart="@drawable/user_icon"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/enter_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_email"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:fontFamily="@font/dancingscript_regular"
+        android:background="@drawable/edit_text_rounded"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        tools:ignore="Autofill"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/login_icon"
+        android:background="@drawable/login_btn"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:text="@string/login_btn"
+        android:textStyle="bold"
+        android:textColor="#E3F2FD"
+        android:textSize="15sp"
+        android:fontFamily="@font/seasrn"/>
+
+
+    <TextView
+        android:id="@+id/signup_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/dancingscript_regular"
+        android:text="@string/signup_txt1"
+        android:textColor="#070707"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/signup_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/signup_txt1"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/lobster_font"
+        android:textColor="#64DD17"
+        android:text="@string/signup_txt2" />
+
+</RelativeLayout>

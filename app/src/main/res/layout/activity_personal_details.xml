@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_screen_bg"
+    tools:context=".PersonalDetailsActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Personal Details"
+        android:textSize="22sp"
+        app:fontFamily="@font/seasrn"
+        app:layout_constraintBottom_toTopOf="@+id/user_name_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint=" Enter Full Name"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/name_icon"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/user_mobile_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/mobile_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Mobile No."
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/user_location_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_edit_text" />
+
+    <EditText
+        android:id="@+id/user_location_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your Address"
+        android:inputType="textPostalAddress"
+        android:drawableStart="@drawable/address_icon"
+        android:drawablePadding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/user_links_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_mobile_edit_text" />
+
+    <EditText
+        android:id="@+id/user_links_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Social Profile"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/link_icon"
+        android:drawablePadding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_personal_details_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_location_edit_text" />
+
+    <Button
+        android:id="@+id/save_personal_details_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_btn_bg"
+        android:text="Add"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/seasrn
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_links_edit_text" />
+</android.support.constraint.ConstraintLayout>

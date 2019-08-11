@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Credible Info</string>
+
+    <string name="task_info"> A Final Internship Project for The Sparks Foundation</string>
+
+    <string name="welcome_msg">Welcome..!!</string>
+
+    <string name="welcome_msg2">We are Happy to see you back..!!</string>
+
+    <string name="email_hint">Enter your E-mail Address</string>
+
+    <string name="password_hint">Enter your Password</string>
+
+    <string name="login_btn">LOGIN</string>
+
+    <string name="signup_txt1">Not a member yet. </string>
+
+    <string name="signup_txt2">Sign Up Here!</string>
+
+    <string name="about_txt"> Hooray...!!</string>
+
+    <string name="about_txt2"> Internship Complete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

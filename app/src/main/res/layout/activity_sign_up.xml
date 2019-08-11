@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/login_screen_bg2">
+
+    <TextView
+        android:id="@+id/signup_head_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Be a person in our Family"
+        android:textColor="#FFF176"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lobster_font"
+        android:layout_marginTop="200dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signup_head_txt"
+        android:layout_margin="15dp"
+        android:text="Go ahead and enter the details"
+        android:textColor="#FDD835"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/dancingscript_regular"
+        />
+
+    <EditText
+        android:id="@+id/enter_email_signup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:hint="@string/email_hint"
+        android:fontFamily="@font/dancingscript_regular"
+        android:background="@drawable/edit_text_rounded"
+        android:drawableStart="@drawable/user_icon"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/enter_password_signup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_email_signup"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:fontFamily="@font/dancingscript_regular"
+        android:background="@drawable/edit_text_rounded"
+        android:drawableStart="@drawable/password_icon"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        tools:ignore="Autofill"/>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_password_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/login_icon"
+        android:background="@drawable/login_btn"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:text="SIGN UP"
+        android:textStyle="bold"
+        android:textColor="#AA00FF"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black"/>
+
+</RelativeLayout>
